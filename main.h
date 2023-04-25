@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
-#include <unisdt.h>
+#include <unistd.h>
 
 /*============== Struct & Typedef ===============*/
 

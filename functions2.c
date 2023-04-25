@@ -50,7 +50,7 @@ int print_pointer(va_list types, char buffer[], int flags,
 	ind++;
 
 	return (write_pointer(buffer, ind, length,
-				width, flags, padd, extra_c, padd_star));
+				width, flags, padd, extra_c, padd_start));
 }
 
 /*========== Print Non Printable =========*/
@@ -130,7 +130,7 @@ int print_reverse(va_list types, char buffer[], int flags,
 
 	for (i = i - 1; i >= 0; i--)
 	{
-		char z str[i];
+		char z = str[i];
 
 		write(1, &z, 1);
 
